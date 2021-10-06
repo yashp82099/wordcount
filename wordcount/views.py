@@ -23,3 +23,7 @@ def count(request):
     wordcount1 = sorted(wordcout, key=operator.itemgetter(1), reverse=True)
     
     return render(request,'count.html', {'fulltext': fulltext, 'count': len(wordlist),'wordcout': wordcount1})
+
+
+def about(request):
+    return render(request,'about.html')

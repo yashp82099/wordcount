@@ -7,8 +7,11 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Word Counter</h1>
+    <br>
+    <a href="{%url 'about'%}">About us</a>
+    <br>
     <form action="{% url 'count' %}">
-        <h1>Word Counter</h1>
         <textarea cols='40' rows='10' name='fulltext'></textarea>
         <br>
         <input type='submit' value='Count!'/>
